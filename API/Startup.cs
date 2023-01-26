@@ -60,7 +60,7 @@ namespace API
                app.UseCors(x => x
                 .AllowAnyMethod()
                 .AllowAnyHeader()
-                 .AllowAnyOrigin()
+                 .WithOrigins("http://localhost:3000")
                ); // allow credentials 
     
             // app.UseCors(x => x
